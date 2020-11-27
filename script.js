@@ -43,7 +43,6 @@ function endGame(player, winner){
         items[c].classList.add("winner");
     }
     info.innerHTML = `${player} WINS`;
-
 }
 
 function checkWinner(){
@@ -52,10 +51,9 @@ function checkWinner(){
         const [a,b,c] = element;
         if (fieldValues[a] && fieldValues[a] === fieldValues[b] && fieldValues[b] === fieldValues[c] ){
             winner = element;
-
         }
     })
-    return winner
+    return winner;
 }
 
 function reset() {
